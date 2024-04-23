@@ -1,7 +1,7 @@
 //CABECALHO
 //Autor: Alanna Tomaz de Aquino Martins 
 //Matricula: 2412130055
-//Objetivo: USO DO WHILE
+//Objetivo: USO DO WHILE (Sequencia dos 10 proximos numeros a partir do dobro ou do triplo do numero inserido pelo usuário, dependendo se esse era par ou impar)
 //Data: 23/04/2024
 
 #include <stdio.h>
