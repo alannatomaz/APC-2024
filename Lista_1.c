@@ -1,4 +1,13 @@
-//Alanna
+//CABECALHO
+//Autor: Alanna Tomaz de Aquino Martins 
+//Matricula: 2412130055
+//Objetivo: Emprestimo de livros da biblioteca
+//Data: 26/04/2024
+
+
+
+//QUESTÃO 1: Receba do usuário via console uma sequência de números inteiros até que 3 números pares sejam lidos.
+//          -Imprima quantas vezes o laço precisou ser repetido.
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -100,4 +109,6 @@ int main (){
 
 --------------------------------------------------------------------------------------------
     
-  
+//QUESTÃO 4: Receba do usuário via console dez números inteiros e ache qual o menor e o maior número informado.
+//          -Imprima o maior número encontrado.
+//          -Imprima o menor número encontrado.  
