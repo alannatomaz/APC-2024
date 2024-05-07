@@ -1,0 +1,107 @@
+// 1) soma dos 50 perimeiros njumeros pares
+// 2) contagem regressiva começando em 20 
+// 3) leia 10 numeros e escrebva o menor valor e o maior valor
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+// Faça um programa que calcule e mostre a soma dos primeiros 50 números pares
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+	int i; 
+	int numero_maximo = 100;
+	
+	printf("Numeros pares ate o 100:\n");
+	
+	for (i = 0; i < numero_maximo; i++){
+		if(i%2 == 0){
+			printf("%d \n", i);
+		}
+	}
+	
+	
+	return 0;	
+}
+
+
+-*------------------------------------------------------------------------
+
+
+
+int main (){
+	int i; 
+	int soma_pares;
+	
+	
+	for(i = 0; i <= 50; i++ ){
+		soma_pares += 2 * i;
+	}
+	printf("A soma dos primeiros 50 numeros pares e: %d", soma_pares);
+	
+		
+}
+
+
+------------------------------------------------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main (){
+	int i; 
+	int numero_minimo = 0;
+	
+	printf("Contagem regressiva a partir do 20:\n");
+	
+	for (i = 20; i >= numero_minimo; i--){
+		printf("%d \n", i);
+	}
+	
+	printf("FIM!");
+	return 0;	
+}
+
+-------------------------------------------------------
+
+#include <stdio.h>
+#include <stdlib.h>  
+
+int main (){
+	int maior_numero;
+	int menor_numero;
+	int numero_usuario;
+	int i;
+	
+	printf("Digite 10 numeros inteiros e o algoritmo dara o menor e o maior:\n");
+		
+	for(i = 0; i < 10; i++){
+		scanf("%d", &numero_usuario);
+		
+		if(i == 0){
+			menor_numero = numero_usuario;
+			maior_numero = numero_usuario;
+		}
+		
+		if(numero_usuario <= menor_numero){
+			menor_numero = numero_usuario;
+		}
+		
+		if(numero_usuario >= maior_numero){
+			maior_numero = numero_usuario;
+		}
+	}
+	
+	
+	printf("\nO menor numero inserido foi: %d", menor_numero);
+	printf("\nO maior numero inserido foi: %d", maior_numero);
+	return 0;
+}
+	
+	
