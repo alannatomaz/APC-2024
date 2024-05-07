@@ -17,8 +17,7 @@ int main (void){
     int quantidade_repeticoes = 0;
     
     printf("Insira uma sequencia de numeros inteiros: ");
-    scanf("%d", &numero_usuario);
-    
+        
     while(numeros_pares < 3){
         scanf("%d", &numero_usuario);
     
@@ -111,4 +110,91 @@ int main (){
     
 //QUESTÃO 4: Receba do usuário via console dez números inteiros e ache qual o menor e o maior número informado.
 //          -Imprima o maior número encontrado.
-//          -Imprima o menor número encontrado.  
+//          -Imprima o menor número encontrado.
+
+#include <stdio.h>
+#include <stdlib.h>  
+
+int main (){
+	int maior_numero;
+	int menor_numero;
+	int numero_usuario;
+	int contador;
+	
+	printf("Digite 10 numeros inteiros e o algoritmo dara o menor e o maior:\n");
+		
+	while (contador < 10){
+		scanf("%d", &numero_usuario);
+		contador++;
+		
+		if(contador == 1){
+			menor_numero = numero_usuario;
+			maior_numero = numero_usuario;
+		}
+		
+		if(numero_usuario <= menor_numero){
+			menor_numero = numero_usuario;
+		}
+		
+		if(numero_usuario >= maior_numero){
+			maior_numero = numero_usuario;
+		}
+	}
+	
+	
+	printf("\nO menor numero inserido foi: %d", menor_numero);
+	printf("\nO maior numero inserido foi: %d", maior_numero);
+	return 0;
+}
+	
+	
+------------------------------------------------------------------------------
+
+//QUESTÃO 5: 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+	int contador = 1;
+	int quantidade_bois_aptos = 0;
+	float peso_boi_usuario;
+	float receita;
+	float peso_boi_apto_1;
+	float peso_boi_apto_2;
+			
+	printf("Insira o peso de cada um dos 5 bois:\n");
+	
+	for(contador; contador < 6; contador++){
+		scanf("%f", &peso_boi_usuario);
+		
+		if(peso_boi_usuario >= 600){
+			quantidade_bois_aptos++;
+			if(quantidade_bois_aptos == 1){
+				peso_boi_apto_1 = peso_boi_usuario;
+			}
+			
+			if(quantidade_bois_aptos == 2){
+				peso_boi_apto_2 = peso_boi_usuario;
+			}
+		}
+		
+		if(contador == 5) {
+			if(quantidade_bois_aptos < 2){
+				printf("O processo nao teve sucesso!");
+			}else{
+				receita = ((peso_boi_apto_1 / 15) * 232.6 ) + ((peso_boi_apto_2 / 15) * 232.6);
+				
+				printf("O valor da receita: %.1lf\n", receita);
+				printf("Foram pesados %d bois", contador);
+			}
+		}
+	}
+	
+	
+	
+	
+	return 0;
+}
+ 
+	
