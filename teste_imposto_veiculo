@@ -1,0 +1,68 @@
+//CABECALHO
+//Aluno: Alanna Tomaz de Aquino Martins
+//Matricula: 2412130055
+//Data: 14/05/2024
+
+//QUESTÃO 3: (incompleto)
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	char c;
+	char m;
+	char o;
+	char categoria;
+	float valor_mercado;
+	int ano_fabricacao;
+	float receita;
+	int contador = 0;
+	
+
+	
+	printf("Feito por ALANNA TOMAZ, matricula 2412130055");
+		
+	
+	while(contador <= 4){
+		printf("\n\nInsira a categoria do veiculo: ");
+			scanf("%c", &categoria);
+		printf("\nInsira o ano de fabricacao do veiculo: ");
+			scanf("%d", &ano_fabricacao);
+		printf("\nInsira o valor atual de mercado do veiculo: ");
+			scanf("%f", &valor_mercado);
+		
+		
+	
+		switch(categoria){
+			case 'c': 
+			{
+				printf("\nO imposto sobre carros e de 5 porcento, nesse caso, ");
+				receita = valor_mercado * 0.05;
+				printf(" para um veiculo da categoria %c, ano %d, com valor de mercado R$ %.1lf, o imposto devido, em reais, fica: %.1lf", categoria, ano_fabricacao, valor_mercado, receita);
+				break;
+			}
+			case 'm': 
+			{
+				printf("\nO imposto sobre motos e de 2.5 porcento, nesse caso,");
+				receita = valor_mercado * 0.025;
+				printf(" para um veiculo da categoria %c, ano %d, com valor de mercado R$ %.1lf, o imposto devido, em reais, fica: %.1lf", categoria, ano_fabricacao, valor_mercado, receita);
+				break;
+			}
+			case 'o': 
+			{
+				printf("\nO imposto sobre caminhoes e de 15 porcento, nesse caso");
+				receita = valor_mercado * 0.15;
+				printf(" para um veiculo da categoria %c, ano %d, com valor de mercado R$ %.1lf, o imposto devido, em reais, fica: %.1lf", categoria, ano_fabricacao, valor_mercado, receita);
+				break;
+			}
+			case 's': printf("\n\nForam lidos %d veiculos", contador);
+				break;
+		}
+		
+		contador++;
+	}
+
+	return 0;	
+}
+		
+	
