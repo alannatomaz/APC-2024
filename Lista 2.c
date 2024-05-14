@@ -1,3 +1,56 @@
+//Lista 2
+//Questao 1:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int	x;
+	int y;
+	int z;
+	
+	printf("Esse programa vai conferir a possibilidade de existencia de um triangulo a partir de valores inseridos pelo usuario.");
+	
+	printf("\nInsira um valor para x: ");
+	scanf("%d", &x);
+	
+	printf("Insira um valor para y: ");
+	scanf("%d", &y);
+	
+	printf("Insira um valor para z: ");
+	scanf("%d", &z);
+	
+	
+	if(x + y > z && x + z > y && z + y > x){
+		printf("\nEsses valores possibilitam a formacao de um triangulo!");
+		
+			if(x == y & x == z){
+				printf("\nNesse caso, um triangulo EQUILATERO!");
+			}	
+			
+			else if(x != y && x != z && y != z){
+				printf("\nNesse caso, um triangulo ESCALENO");
+			}
+			
+			else if((x == y) != z || (x == z) != y || (y == z) != x){
+				printf("\nNesse caso, um triangulo ISOCELES");	
+			}
+			
+		
+	}else{
+		printf("\nA soma dos comprimentos dos lados nao possibilita a existencia de um triagulo!");
+	}
+	
+
+return 0;	
+}
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------
 //Lista 2:
 //luvas
 
