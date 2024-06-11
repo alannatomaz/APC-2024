@@ -19,8 +19,7 @@ int main(){
 		printf(" %d", valores[i]);
 		
 	}
-	
-
+	return 0;
 }
 
 
@@ -78,10 +77,13 @@ int main() {
     }
     media = soma / 5;
     printf("A media dos valores foi de %.2f", media);
+
+return 0;	
 }
 
 //QUESYAO 4: 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int valores[8];
@@ -98,6 +100,8 @@ int main() {
     scanf("%d", &y);
     soma = valores[x] + valores[y];
     printf("O valor encontrado na posicao %d foi %d e na posicao %d foi %d, a soma deles resulta em %d", x, valores[x], y, valores[y], soma);
+
+return 0;
 }
 
 //QUESTAO 5: 
@@ -113,4 +117,5 @@ int main() {
     for (i = 0; i < 6; i++) {
         printf("%d\n", vetor_a[i]);
     }
+return 0;	
 }
