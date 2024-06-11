@@ -1,5 +1,10 @@
 //Lista 2
 //Questao 1:
+QUESTAO 1: Fazer um programa para receber valores inteiros X, Y e Z do usuario e determinar se ester valores podem formar os lados de um triangulo.
+			   Em caso afirmativo, informar se o triangulo e equilatero, isoceles ou escaleno. 
+			   Imprima o nome do triangulo formado 
+			   Imprima mensagem de erro caso nao seja possivel formar o triangulo:
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -45,86 +50,139 @@ int main(){
 return 0;	
 }
 
-
-
-
-
-
----------------------------------------------------------------------------------------------
-//Lista 2:
-//luvas
-
-//QUESTAO 1:
-
-#include<stdio.h>
-
-int main() {
-	int x, y, z;
-	printf("Digite os tres lados para ver se forma um triangulo :\n");
-	scanf("%d", &x);
-	scanf("%d", &y);
-	scanf("%d", &z);
-//	if () { boa sorte meu bem te amo
-		if (x == y && x == z) {
-			printf("Encontramos um triangulo equilatero");
-		}else if(x == y || x == z || y == z) {
-			printf("Encontramos um triangulo isosceles");
-		}else if(x != y && x != z && y != z) {
-			printf("Encontramos um triangulo escaleno");
-		}
-	}else {
-		printf("Nao foi possivel formar um triangulo");
-	}
-}
-
-
 //Questão 2:
 
+QUESTAO 2: Fazer um programa que recebe um simbolo de operacao do usuario (+, -, * ou /) e dois numeros reais (float).
+			  O programa deve retornar o resultado da operacao recebida sobre estes dois numeros.
+			  Imprima a operacao selecionada pelo ususario
+			  Imprima o numero calculado:
+*/
+
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
 	char operacao;
-	float a,b;
+	float a;
+	float b;
+	
 	printf("Digite um simbolo de operacao: +, -, / ou *:\n");
-	scanf("%c", &operacao); 
-	printf("Digite dois floats:\n");
+	scanf("%c", &operacao);
+	 
+	printf("Digite dois numeros reais:\n");
 	scanf("%f", &a);
 	scanf("%f", &b);
+	
 	switch (operacao) {
-		case '+': printf("A operacao selecionada foi %c e o resultado %f", operacao, a+b); break;
-		case '-': printf("A operacao selecionada foi %c e o resultado %f", operacao, a-b); break;
-		case '/': printf("A operacao selecionada foi %c e o resultado %f", operacao, a/b); break;
-		case '*': printf("A operacao selecionada foi %c e o resultado %f", operacao, a*b); break;
+		case '+': 
+			printf("A operacao selecionada foi %c e o resultado %.1lf", operacao, a+b); 
+				break;
+		case '-': 
+			printf("A operacao selecionada foi %c e o resultado %.1lf", operacao, a-b); 
+				break;
+		case '/': 
+			printf("A operacao selecionada foi %c e o resultado %.1lf", operacao, a/b); 
+				break;
+		case '*': 
+			printf("A operacao selecionada foi %c e o resultado %.1lf", operacao, a*b); 
+				break;
 	}
+	
+	return 0;
 }
-
 
 //Questao 3:
+QUESTÃO 3: Escreva um programa que receba a velocidade com que um motorista estava dirigindo em uma avenida. 
+              Calcule a multa que o motorista vai receber, considerando que são pagos R$ 5.00 por cada km/h que estiver acima da vel. permitida
+              Se a velocidade do motorista estiver dentro do limite, o programa deve informar que não há multa. 
+              A velocidade máxima permitida é de 60 km/h
+*/
 
 #include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+	float velocidade_maxima_permitida = 60.0;
+	float velocidade_motorista = 0.0;
+	float valor_multa = 0.0;
+ 
+	printf("Insira a velocidade que o motorista estava dirigindo: ");
+	scanf("%f", &velocidade_motorista);
+		
+	if(velocidade_motorista > velocidade_maxima_permitida){
+		printf("\nO motorista estava dirigindo ACIMA da velocidade permitida!");
+			
+		valor_multa = (velocidade_motorista - velocidade_maxima_permitida) * 5;
+			
+		printf("\nNessa velocidade o valor total da multa fica em: R$%.1lf ", valor_multa);
+	}else{
+		printf("O motorista estava dirigindo em uma velocidade PERMITIDA! \nNao se aplica multa.");
+	}
+	 	
+ 	
+	return 0;
+}
+
+//QUESTAO 4:
+
+4: Fazer um programa para mostrar os 15 primeiros termos da serie de fibonacci
+				Imprima os numeros encontrados: 
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+	int contador;
+	int termo;
+	int pre_termo_1 = 1;
+	int pre_termo_2 = 1;
+	
+	printf("Primeiros termos da sequencia de FIBONACCI:\n");
+	
+	for(contador = 1; contador <= 15; contador++){
+		
+		if(contador == 1 || contador == 2){
+			termo = 1;
+			
+			printf("%d\n", termo);
+		}else{
+			termo = pre_termo_1 + pre_termo_2;
+			pre_termo_2 = pre_termo_1;
+			pre_termo_1 = termo;
+			
+			printf("%d\n", termo);
+		}
+	}
+	
+	return 0;
+}
+
+//QUESTAO 5:
+Fazer um programa para calcular os numeros primos existentes entre os valores 0 a 50. 
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(){
-   int n1=0,n2=1,n;
-   printf("enter the value of n \n");
-   scanf("%d",&n);
-   
-   printf("\n%d\n",n1);
-   
-   for(int i=1;i<=(n-1);i++) {
-       printf("%d \n",n2);
-       int n=n1+n2;
-       n1=n2;
-       n2=n;
-   }
-
-	printf("\n%d\n",fib(n));
-    return 0;
+	int i;
+	int j;
+	int contador = 0;
+	
+	for(i = 0; i < 51; i++){
+		contador = 0;
+		for(j = i; j > 0; j--){
+			if(i % j == 0){
+				contador++;
+			}
+		}
+		if(contador == 2){
+			printf("\n%d", i);
+		}
+	}
+	return 0;
 }
 
-int fib(int k) {
-    // First, check our exit (stop) conditions:
-    if (k == 0 || k == 1) return 1;
 
-    // Now recursive part  
-    return fib(k - 1) + fib(k - 2);
-}
+
