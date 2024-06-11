@@ -1,5 +1,6 @@
 //QUESTAO 1:
 include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     char string[11];
@@ -15,6 +16,7 @@ int main() {
 
 //QUESTAO 2:
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     char string[51];
@@ -32,6 +34,7 @@ int main() {
 
 //QUESTAO 3: 
 include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main() {
@@ -52,6 +55,7 @@ int main() {
 //QUESTAO 4:
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main() {
@@ -71,6 +75,7 @@ int main() {
 //QUESTAO 5:
 
 include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main() {
