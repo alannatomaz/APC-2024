@@ -1,4 +1,4 @@
 modules = ["c-clang14"]
-
+run = "gcc main.c -o main && ./main"
 [nix]
 channel = "stable-24_05"
