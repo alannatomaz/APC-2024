@@ -1,0 +1,5 @@
+# Aula 12-08
+
+## Continuação de ponteiros
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget leo cursus, faucibus est ut, consectetur lectus. In pharetra orci non magna vestibulum, porta mattis erat faucibus. Aenean dolor nulla, lacinia ut sapien nec, eleifend scelerisque quam. Phasellus finibus ligula in magna semper ornare. Praesent tempus risus nec facilisis luctus. Nullam quis auctor nisl, et rhoncus mauris. Suspendisse potenti. Proin vitae enim convallis, bibendum ante at, suscipit urna. Duis mollis nibh sed erat fermentum, vitae molestie nibh pharetra. Donec rhoncus, risus sit amet aliquet faucibus, arcu magna finibus arcu, id rutrum leo leo eu urna. Curabitur eu euismod nisi. Integer condimentum, sem sed imperdiet vulputate, odio sem consequat elit, in consectetur enim turpis nec lectus. Proin eu tempor nibh, non dictum tortor. Quisque varius augue elit, non laoreet est semper suscipit. Cras bibendum quis dolor in sagittis.
