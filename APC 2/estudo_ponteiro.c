@@ -23,5 +23,8 @@ int main(){
     printf("\n\n%d", *ptr_x);
     printf("\n%p", &*ptr_x);
 
+  scanf("%d", ptr_x);
+  //No SCANF, o que vem depois da virgula não é o nome da variável que está sendo mudada e sim ONDE ele vai salvar o que foi lido
+
     return 0;
 }
