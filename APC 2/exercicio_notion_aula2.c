@@ -40,7 +40,8 @@ int main(){
     d) Verdadeiro
     e) Falso = *(pv + 2) retorna valor e não endereço de memória
     f) Verdadeiro
-
+    
+    */
 
 
 }
