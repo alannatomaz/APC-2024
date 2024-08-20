@@ -10,13 +10,13 @@ int main() {
 
   printf("Representacao de vetor: \n");
   printf("&vet[0]: %p, vet[0]: %d\n", &vet[0], vet[0]);
-  printf("&vet[0]: %p, vet[0]: %d\n", &vet[1], vet[1]);
-  printf("&vet[0]: %p, vet[0]: %d\n", &vet[2], vet[2]);
+  printf("&vet[1]: %p, vet[1]: %d\n", &vet[1], vet[1]);
+  printf("&vet[2]: %p, vet[2]: %d\n", &vet[2], vet[2]);
 
   printf("\nRepresentacao de ponteiro: \n");
   printf("vet: %p, *vet: %d\n", vet, *vet);//vet[0]
-  printf("vet+1: %p, *vet+1: %d\n", vet, *(vet+1));//vet[1]
-  printf("vet: %p, *vet+2: %d\n", vet, *(vet+2));//vet[2]
+  printf("vet+1: %p, *vet+1: %d\n", vet+1, *(vet+1));//vet[1]
+  printf("vet+2: %p, *vet+2: %d\n", vet+2, *(vet+2));//vet[2]
 
   int *p = vet; // p = &vet[0] --- A partir da posicao [0] do vetor 
   printf("\n\nRepresentação de vetor (com ponteiro p): \n");
@@ -58,6 +58,7 @@ int main() {
 
   printf("\nRepresentacao de vetor: \n");
   printf("&pn[0]: %p, pn[0]: %d\n", &pn[0], pn[0]);
+
 
 
   //Percorrer MATRIZ usando linhas e colunas:
