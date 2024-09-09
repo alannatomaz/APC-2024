@@ -46,7 +46,7 @@ int main() {
       imagem2[x][y] = imagem[x][y];
   }
 
-  // copia imagem original para imagem 2
+  // copia imagem original para imagem 3
   int imagem3[10][10];
   for (int x = 0; x < 10; x++) {
     for (int y = 0; y < 10; y++) 
@@ -65,18 +65,43 @@ int main() {
   // insira o seu código abaixo
   // soluçao:
 
-  // pchar2[3] = 0;//canal R pixel 1
+  //
+  //pchar2[3] = 0;//canal R pixel 1
   // pchar2[3+4] = 0;//canal R pixel 2
   // pchar2[3+4+4] = 0;//canal R pixel 3
+
+   for(int i = 3; i < 400; i+=4){
+   *(pchar2 + i) = 0;
+
+  }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // int b = 3;
   // for(int i = 3; i < 400; i = i+4) {
   //   *(pchar2 + i) = 0;
   // }
 
-  for(int b = 3; b < 100*4; b += 4) {
-    *(pchar2+b) = 0;
-  }
+  // for(int b = 3; b < 100*4; b += 4) {
+    // *(pchar2+b) = 0;
+  // }
 
   // Exercício 2
   unsigned char *pchar3 = (unsigned char *)imagem3;
